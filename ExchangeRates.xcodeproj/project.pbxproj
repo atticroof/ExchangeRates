@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02D8E8E865B22D89689CC7A /* Pods_ExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE29DBA0D882C79DEAD1942 /* Pods_ExchangeRates.framework */; };
 		DE250DA322A478280012BA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DA222A478280012BA4B /* AppDelegate.swift */; };
 		DE250DA522A478280012BA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DA422A478280012BA4B /* ViewController.swift */; };
 		DE250DA822A478280012BA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE250DA622A478280012BA4B /* Main.storyboard */; };
 		DE250DAA22A478290012BA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE250DA922A478290012BA4B /* Assets.xcassets */; };
 		DE250DAD22A478290012BA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE250DAB22A478290012BA4B /* LaunchScreen.storyboard */; };
+		DE250DB722A479C90012BA4B /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DB622A479C90012BA4B /* ExchangeRate.swift */; };
+		DE250DB922A479D90012BA4B /* ERManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DB822A479D90012BA4B /* ERManager.swift */; };
+		DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274FA0B77A7C27CDA5761A76 /* Pods-ExchangeRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.debug.xcconfig"; path = "Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFC7D286C642D82EAC555C3 /* Pods-ExchangeRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.release.xcconfig"; path = "Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.release.xcconfig"; sourceTree = "<group>"; };
+		BAE29DBA0D882C79DEAD1942 /* Pods_ExchangeRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE250D9F22A478280012BA4B /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE250DA222A478280012BA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE250DA422A478280012BA4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		DE250DA922A478290012BA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE250DAC22A478290012BA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE250DAE22A478290012BA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE250DB622A479C90012BA4B /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		DE250DB822A479D90012BA4B /* ERManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERManager.swift; sourceTree = "<group>"; };
+		DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ERManager+Update.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02D8E8E865B22D89689CC7A /* Pods_ExchangeRates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29000F3E616438E65CED7701 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274FA0B77A7C27CDA5761A76 /* Pods-ExchangeRates.debug.xcconfig */,
+				ADFC7D286C642D82EAC555C3 /* Pods-ExchangeRates.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D77F30728DEDEA7AAD427990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE29DBA0D882C79DEAD1942 /* Pods_ExchangeRates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE250D9622A478280012BA4B = {
 			isa = PBXGroup;
 			children = (
 				DE250DA122A478280012BA4B /* ExchangeRates */,
 				DE250DA022A478280012BA4B /* Products */,
+				29000F3E616438E65CED7701 /* Pods */,
+				D77F30728DEDEA7AAD427990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +84,8 @@
 		DE250DA122A478280012BA4B /* ExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				DE250DB522A4798E0012BA4B /* Domain */,
+				DE250DB422A4797A0012BA4B /* Manager */,
 				DE250DA222A478280012BA4B /* AppDelegate.swift */,
 				DE250DA422A478280012BA4B /* ViewController.swift */,
 				DE250DA622A478280012BA4B /* Main.storyboard */,
@@ -64,6 +96,23 @@
 			path = ExchangeRates;
 			sourceTree = "<group>";
 		};
+		DE250DB422A4797A0012BA4B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DE250DB822A479D90012BA4B /* ERManager.swift */,
+				DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DE250DB522A4798E0012BA4B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DE250DB622A479C90012BA4B /* ExchangeRate.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE250DB122A478290012BA4B /* Build configuration list for PBXNativeTarget "ExchangeRates" */;
 			buildPhases = (
+				6279EBF75203AA5BF9BCF832 /* [CP] Check Pods Manifest.lock */,
 				DE250D9B22A478280012BA4B /* Sources */,
 				DE250D9C22A478280012BA4B /* Frameworks */,
 				DE250D9D22A478280012BA4B /* Resources */,
+				A585C02590C8CC1E460B446F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +181,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6279EBF75203AA5BF9BCF832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExchangeRates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A585C02590C8CC1E460B446F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE250D9B22A478280012BA4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE250DA522A478280012BA4B /* ViewController.swift in Sources */,
+				DE250DB722A479C90012BA4B /* ExchangeRate.swift in Sources */,
+				DE250DB922A479D90012BA4B /* ERManager.swift in Sources */,
+				DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */,
 				DE250DA322A478280012BA4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,10 +376,12 @@
 		};
 		DE250DB222A478290012BA4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274FA0B77A7C27CDA5761A76 /* Pods-ExchangeRates.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExchangeRates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +395,12 @@
 		};
 		DE250DB322A478290012BA4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFC7D286C642D82EAC555C3 /* Pods-ExchangeRates.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExchangeRates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
