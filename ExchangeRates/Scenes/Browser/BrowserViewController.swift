@@ -69,8 +69,8 @@ extension BrowserViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let viewController = ExchangeController.init()
-//        viewController.currency = currencies[indexPath.row]
-//        self.navigationController?.pushViewController(viewController, animated: true)
+        let viewController = ExchangerViewController.init()
+        viewController.rate = results[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

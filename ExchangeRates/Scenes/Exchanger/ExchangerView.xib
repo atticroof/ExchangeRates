@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangerViewController" customModule="ExchangeRates" customModuleProvider="target">
+            <connections>
+                <outlet property="tfBitcoin" destination="dqQ-FB-XfQ" id="u9Y-d3-LWD"/>
+                <outlet property="tfExchange" destination="Fbo-3W-uay" id="nlx-Ku-EAZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Cka-TV-60D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-FB-XfQ">
+                    <rect key="frame" x="0.0" y="100" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="RF9-hN-rBo"/>
+                        <constraint firstAttribute="height" constant="30" id="zOE-oH-5nh"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="w9G-q6-FgW"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fbo-3W-uay">
+                    <rect key="frame" x="0.0" y="138" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KAR-DL-3q3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="u2E-Xg-JoI"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6S3-Ml-uKC"/>
+                <constraint firstItem="dqQ-FB-XfQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GuS-3o-PFO"/>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="top" secondItem="dqQ-FB-XfQ" secondAttribute="bottom" constant="8" id="Pou-2s-5w4"/>
+                <constraint firstItem="dqQ-FB-XfQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="U3c-z3-83s"/>
+                <constraint firstItem="dqQ-FB-XfQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X5n-A9-Tg5"/>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="a9p-21-v2X"/>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="top" secondItem="dqQ-FB-XfQ" secondAttribute="bottom" constant="8" id="kPA-ey-7G6"/>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kQD-dm-Xpt"/>
+                <constraint firstItem="dqQ-FB-XfQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="80" id="kiM-Nk-1iq"/>
+                <constraint firstItem="Fbo-3W-uay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ql3-VZ-ZXO"/>
+                <constraint firstItem="dqQ-FB-XfQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="v5B-eG-Oxc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+        </view>
+    </objects>
+</document>

@@ -18,6 +18,8 @@
 		DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */; };
 		DE250DC122A4DCFF0012BA4B /* CurrencyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DC022A4DCFF0012BA4B /* CurrencyCellView.swift */; };
 		DE250DC322A4DD100012BA4B /* CurrencyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE250DC222A4DD100012BA4B /* CurrencyCellView.xib */; };
+		DE250DC522A500C90012BA4B /* ExchangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DC422A500C90012BA4B /* ExchangerViewController.swift */; };
+		DE250DC722A500DD0012BA4B /* ExchangerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE250DC622A500DD0012BA4B /* ExchangerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ERManager+Update.swift"; sourceTree = "<group>"; };
 		DE250DC022A4DCFF0012BA4B /* CurrencyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellView.swift; sourceTree = "<group>"; };
 		DE250DC222A4DD100012BA4B /* CurrencyCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCellView.xib; sourceTree = "<group>"; };
+		DE250DC422A500C90012BA4B /* ExchangerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangerViewController.swift; sourceTree = "<group>"; };
+		DE250DC622A500DD0012BA4B /* ExchangerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		DE250DBE22A4D3A50012BA4B /* Exchanger */ = {
 			isa = PBXGroup;
 			children = (
+				DE250DC422A500C90012BA4B /* ExchangerViewController.swift */,
+				DE250DC622A500DD0012BA4B /* ExchangerView.xib */,
 			);
 			path = Exchanger;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			files = (
 				DE250DAD22A478290012BA4B /* LaunchScreen.storyboard in Resources */,
 				DE250DAA22A478290012BA4B /* Assets.xcassets in Resources */,
+				DE250DC722A500DD0012BA4B /* ExchangerView.xib in Resources */,
 				DE250DA822A478280012BA4B /* Main.storyboard in Resources */,
 				DE250DC322A4DD100012BA4B /* CurrencyCellView.xib in Resources */,
 			);
@@ -269,6 +276,7 @@
 			files = (
 				DE250DA522A478280012BA4B /* BrowserViewController.swift in Sources */,
 				DE250DB722A479C90012BA4B /* ExchangeRate.swift in Sources */,
+				DE250DC522A500C90012BA4B /* ExchangerViewController.swift in Sources */,
 				DE250DB922A479D90012BA4B /* ERManager.swift in Sources */,
 				DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */,
 				DE250DA322A478280012BA4B /* AppDelegate.swift in Sources */,
