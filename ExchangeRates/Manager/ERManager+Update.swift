@@ -28,7 +28,7 @@ extension ERManager {
                     exchange.nSellRate = rate.sell!
                     
                     try! realm.write {
-                        realm.add(exchange)
+                        realm.add(exchange, update: .all)
                     }
                 }
             }

@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		C02D8E8E865B22D89689CC7A /* Pods_ExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE29DBA0D882C79DEAD1942 /* Pods_ExchangeRates.framework */; };
 		DE250DA322A478280012BA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DA222A478280012BA4B /* AppDelegate.swift */; };
-		DE250DA522A478280012BA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DA422A478280012BA4B /* ViewController.swift */; };
+		DE250DA522A478280012BA4B /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DA422A478280012BA4B /* BrowserViewController.swift */; };
 		DE250DA822A478280012BA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE250DA622A478280012BA4B /* Main.storyboard */; };
 		DE250DAA22A478290012BA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE250DA922A478290012BA4B /* Assets.xcassets */; };
 		DE250DAD22A478290012BA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE250DAB22A478290012BA4B /* LaunchScreen.storyboard */; };
 		DE250DB722A479C90012BA4B /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DB622A479C90012BA4B /* ExchangeRate.swift */; };
 		DE250DB922A479D90012BA4B /* ERManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DB822A479D90012BA4B /* ERManager.swift */; };
 		DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */; };
+		DE250DC122A4DCFF0012BA4B /* CurrencyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE250DC022A4DCFF0012BA4B /* CurrencyCellView.swift */; };
+		DE250DC322A4DD100012BA4B /* CurrencyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE250DC222A4DD100012BA4B /* CurrencyCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,7 @@
 		BAE29DBA0D882C79DEAD1942 /* Pods_ExchangeRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE250D9F22A478280012BA4B /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE250DA222A478280012BA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE250DA422A478280012BA4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE250DA422A478280012BA4B /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		DE250DA722A478280012BA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE250DA922A478290012BA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE250DAC22A478290012BA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		DE250DB622A479C90012BA4B /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		DE250DB822A479D90012BA4B /* ERManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERManager.swift; sourceTree = "<group>"; };
 		DE250DBA22A479EA0012BA4B /* ERManager+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ERManager+Update.swift"; sourceTree = "<group>"; };
+		DE250DC022A4DCFF0012BA4B /* CurrencyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellView.swift; sourceTree = "<group>"; };
+		DE250DC222A4DD100012BA4B /* CurrencyCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +88,10 @@
 		DE250DA122A478280012BA4B /* ExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				DE250DBC22A4D3890012BA4B /* Scenes */,
 				DE250DB522A4798E0012BA4B /* Domain */,
 				DE250DB422A4797A0012BA4B /* Manager */,
 				DE250DA222A478280012BA4B /* AppDelegate.swift */,
-				DE250DA422A478280012BA4B /* ViewController.swift */,
-				DE250DA622A478280012BA4B /* Main.storyboard */,
 				DE250DA922A478290012BA4B /* Assets.xcassets */,
 				DE250DAB22A478290012BA4B /* LaunchScreen.storyboard */,
 				DE250DAE22A478290012BA4B /* Info.plist */,
@@ -111,6 +114,41 @@
 				DE250DB622A479C90012BA4B /* ExchangeRate.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		DE250DBC22A4D3890012BA4B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DE250DBF22A4DCE00012BA4B /* CurrencyCell */,
+				DE250DBE22A4D3A50012BA4B /* Exchanger */,
+				DE250DBD22A4D39D0012BA4B /* Browser */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DE250DBD22A4D39D0012BA4B /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				DE250DA422A478280012BA4B /* BrowserViewController.swift */,
+				DE250DA622A478280012BA4B /* Main.storyboard */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		DE250DBE22A4D3A50012BA4B /* Exchanger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exchanger;
+			sourceTree = "<group>";
+		};
+		DE250DBF22A4DCE00012BA4B /* CurrencyCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE250DC022A4DCFF0012BA4B /* CurrencyCellView.swift */,
+				DE250DC222A4DD100012BA4B /* CurrencyCellView.xib */,
+			);
+			path = CurrencyCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +214,7 @@
 				DE250DAD22A478290012BA4B /* LaunchScreen.storyboard in Resources */,
 				DE250DAA22A478290012BA4B /* Assets.xcassets in Resources */,
 				DE250DA822A478280012BA4B /* Main.storyboard in Resources */,
+				DE250DC322A4DD100012BA4B /* CurrencyCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,11 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE250DA522A478280012BA4B /* ViewController.swift in Sources */,
+				DE250DA522A478280012BA4B /* BrowserViewController.swift in Sources */,
 				DE250DB722A479C90012BA4B /* ExchangeRate.swift in Sources */,
 				DE250DB922A479D90012BA4B /* ERManager.swift in Sources */,
 				DE250DBB22A479EA0012BA4B /* ERManager+Update.swift in Sources */,
 				DE250DA322A478280012BA4B /* AppDelegate.swift in Sources */,
+				DE250DC122A4DCFF0012BA4B /* CurrencyCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
